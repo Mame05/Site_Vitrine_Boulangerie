@@ -1,0 +1,43 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff9f5;
+  color: #333;
+}
+
+/* Personnalisation de la navbar */
+nav.navbar {
+  background-color: #c78b55 !important; /* Remplace le bg-warning Bootstrap */
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* légère ombre */
+}
+
+/* Lien de navigation */
+.navbar-nav .nav-link {
+  color: white !important;
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffefc3 !important; /* Couleur de survol douce */
+}
+/* Style du menu mobile */
+.mobile-nav {
+  background-color: #4d2e1f; /* fond distinct */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 40%;
+  z-index: 999;
+}
+
+
+
+
+
+
+
