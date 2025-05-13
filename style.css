@@ -13,6 +13,11 @@ nav.navbar {
   padding: 1rem 2rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* légère ombre */
 }
+/* Logo */
+.navbar-brand {
+  white-space: nowrap; /* Empêche le retour à la ligne */
+  font-size: 1.25rem;
+}
 
 /* Lien de navigation */
 .navbar-nav .nav-link {
@@ -25,6 +30,7 @@ nav.navbar {
 .navbar-nav .nav-link:hover {
   color: #ffefc3 !important; /* Couleur de survol douce */
 }
+
 /* Style du menu mobile */
 .mobile-nav {
   background-color: #4d2e1f; /* fond distinct */
@@ -34,6 +40,12 @@ nav.navbar {
   width: 40%;
   z-index: 999;
 }
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1rem; /* Réduit la taille du texte sur petit écran */
+  }
+}
+
 
 
 
