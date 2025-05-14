@@ -6,7 +6,7 @@ body {
   color: #333;
 }
 
-/* Personnalisation de la navbar */
+                   /***  NAVIGATION ***/
 nav.navbar {
   background-color: #c78b55 !important; /* Remplace le bg-warning Bootstrap */
   color: white;
@@ -39,6 +39,47 @@ nav.navbar {
   left: 0;
   width: 40%;
   z-index: 999;
+}
+           /*** BANNIERE   ***/
+.hero-banner {
+  position: relative;
+}
+.carousel-inner img {
+  height: 400px;
+  object-fit: cover;
+  object-position: center; /* centrer l'image */
+}
+
+/* Texte centré sur l'image */
+.carousel-caption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4); /* optionnel : fond sombre transparent */
+  color: white;
+  padding: 2rem;
+  z-index: 2;
+}
+
+/* Ajustement du bouton */
+.carousel-caption .btn-warning {
+  background-color: #a35e2d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+}
+
+.carousel-caption .btn-warning:hover {
+  background-color: #8a4e24;
+}
+
+/* Section générique */
+.section {
+  padding: 3rem 2rem;
 }
 @media (max-width: 576px) {
   .navbar-brand {
