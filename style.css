@@ -12,11 +12,19 @@ nav.navbar {
   color: white;
   padding: 1rem 2rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* légère ombre */
+  height: 70px;
+  overflow: visible;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
+
 /* Logo */
 .navbar-brand {
   white-space: nowrap; /* Empêche le retour à la ligne */
   font-size: 1.25rem;
+  
 }
 
 /* Lien de navigation */
@@ -30,6 +38,19 @@ nav.navbar {
 .navbar-nav .nav-link:hover {
   color: #ffefc3 !important; /* Couleur de survol douce */
 }
+.menu-icon, .close-icon {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.d-none {
+  display: none !important;
+}
+
+/*.navbar-toggler:focus { /* Pour supprimer le rectanle qui entour les menu au click*/
+  /*outline: none;
+  box-shadow: none;
+}*/
 
 /* Style du menu mobile */
 .mobile-nav {
@@ -40,15 +61,40 @@ nav.navbar {
   width: 40%;
   z-index: 999;
 }
+
            /*** BANNIERE   ***/
 .hero-banner {
   position: relative;
 }
+.carousel-indicators{
+  z-index: 10;
+}
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+ background-color: #c78b55;
+}
+
 .carousel-inner img {
   height: 400px;
   object-fit: cover;
   object-position: center; /* centrer l'image */
 }
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 10;
+  cursor: pointer;
+}
+/* les flèches étaient probablement cachées derrière un autre élément (comme .carousel-caption) à cause de l’ordre de superposition (z-index).
+    z-index: 10; sur .carousel-control-prev et .carousel-control-next permet de les placer au-dessus des autres éléments du carrousel. */
 
 /* Texte centré sur l'image */
 .carousel-caption {
@@ -63,6 +109,7 @@ nav.navbar {
   padding: 2rem;
   z-index: 2;
 }
+
 
 /* Ajustement du bouton */
 .carousel-caption .btn-warning {
@@ -86,6 +133,8 @@ nav.navbar {
     font-size: 1rem; /* Réduit la taille du texte sur petit écran */
   }
 }
+
+
 
 
 
