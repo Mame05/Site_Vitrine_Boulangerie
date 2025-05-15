@@ -6,17 +6,25 @@ body {
   color: #333;
 }
 
-/* Personnalisation de la navbar */
+                   /***  NAVIGATION ***/
 nav.navbar {
   background-color: #c78b55 !important; /* Remplace le bg-warning Bootstrap */
   color: white;
   padding: 1rem 2rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* légère ombre */
+  height: 70px;
+  overflow: visible;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
+
 /* Logo */
 .navbar-brand {
   white-space: nowrap; /* Empêche le retour à la ligne */
   font-size: 1.25rem;
+  
 }
 
 /* Lien de navigation */
@@ -30,6 +38,19 @@ nav.navbar {
 .navbar-nav .nav-link:hover {
   color: #ffefc3 !important; /* Couleur de survol douce */
 }
+.menu-icon, .close-icon {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.d-none {
+  display: none !important;
+}
+
+/*.navbar-toggler:focus { /* Pour supprimer le rectanle qui entour les menu au click*/
+  /*outline: none;
+  box-shadow: none;
+}*/
 
 /* Style du menu mobile */
 .mobile-nav {
@@ -40,11 +61,80 @@ nav.navbar {
   width: 40%;
   z-index: 999;
 }
+
+           /*** BANNIERE   ***/
+.hero-banner {
+  position: relative;
+}
+.carousel-indicators{
+  z-index: 10;
+}
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+ background-color: #c78b55;
+}
+
+.carousel-inner img {
+  height: 400px;
+  object-fit: cover;
+  object-position: center; /* centrer l'image */
+}
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 10;
+  cursor: pointer;
+}
+/* les flèches étaient probablement cachées derrière un autre élément (comme .carousel-caption) à cause de l’ordre de superposition (z-index).
+    z-index: 10; sur .carousel-control-prev et .carousel-control-next permet de les placer au-dessus des autres éléments du carrousel. */
+
+/* Texte centré sur l'image */
+.carousel-caption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4); /* optionnel : fond sombre transparent */
+  color: white;
+  padding: 2rem;
+  z-index: 2;
+}
+
+
+/* Ajustement du bouton */
+.carousel-caption .btn-warning {
+  background-color: #a35e2d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+}
+
+.carousel-caption .btn-warning:hover {
+  background-color: #8a4e24;
+}
+
+/* Section générique */
+.section {
+  padding: 3rem 2rem;
+}
 @media (max-width: 576px) {
   .navbar-brand {
     font-size: 1rem; /* Réduit la taille du texte sur petit écran */
   }
 }
+
+
 
 
 
