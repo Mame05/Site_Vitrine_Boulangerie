@@ -128,11 +128,55 @@ nav.navbar {
 .section {
   padding: 3rem 2rem;
 }
+     /* A PROPOS  */
+#apropos h2 {
+  color: #c78b55; /* Une teinte marron clair, si tu veux rappeler ta navbar */
+  font-weight: bold;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  /*text-transform: uppercase;*/
+}
+/* petite ligne sous le titre */ 
+/*h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #c78b55;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}*/
+
+#apropos p {
+  font-size: 1.1rem;
+  color: #333; /* ou #555 pour plus de douceur */
+  line-height: 1.6;
+}
+
+#apropos img {
+  border: 6px solid white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  width: 400px; /* ou 300px selon ton design */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#apropos img:hover {
+  transform: rotate(0deg) scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+
 @media (max-width: 576px) {
   .navbar-brand {
     font-size: 1rem; /* Réduit la taille du texte sur petit écran */
   }
 }
+
+
 
 
 
