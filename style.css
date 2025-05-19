@@ -128,15 +128,17 @@ nav.navbar {
 .section {
   padding: 3rem 2rem;
 }
-     /* A PROPOS  */
-#apropos h2 {
+/* Titre des sections */
+h2 {
   color: #c78b55; /* Une teinte marron clair, si tu veux rappeler ta navbar */
   font-weight: bold;
   font-size: 2.2rem;
   text-align: center;
   margin-bottom: 1.5rem;
   /*text-transform: uppercase;*/
-}
+  }
+     /* A PROPOS  */ 
+
 /* petite ligne sous le titre */ 
 /*h2::after {
   content: "";
@@ -167,6 +169,37 @@ nav.navbar {
 #apropos img:hover {
   transform: rotate(0deg) scale(1.03);
   transition: transform 0.3s ease;
+}
+
+      /*   PRODUITS    */
+/* Effet de survol sur les cartes */
+#produits .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none; /* Supprime la bordure grise par défaut */
+  border-radius: 10px;
+}
+
+/*#produits .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}*/
+
+/* Titre de produit */
+#produits .card-title {
+  font-weight: 600;
+  color: #5c3a1d;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Texte de description */
+#produits .card-text {
+  font-size: 1rem;
+  color: #555;
+}
+#produits .card img {
+  height: 200px;
+  object-fit: cover;
 }
 
 
