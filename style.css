@@ -202,6 +202,50 @@ h2 {
   object-fit: cover;
 }
 
+                /*    CONTACT    */
+
+.contact-info {
+  font-size: 1.1rem;
+  background-color: #fdf7f3;
+  border-left: 5px solid #864a23;
+  line-height: 1.6;
+  color: #333;
+  
+}
+
+.contact-info i {
+  font-size: 1.2rem;
+  color: #864a23;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+input.form-control,
+textarea.form-control {
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button.btn-warning {
+  background-color: #a35e2d;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-warning:hover {
+  background-color: #864a23;
+}
+
 
 @media (max-width: 576px) {
   .navbar-brand {
