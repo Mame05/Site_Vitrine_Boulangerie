@@ -21,4 +21,4 @@ Il a été conçu pour servir de modèle réutilisable et personnalisable pour n
 
 ## 📷 Aperçu
 
-![Aperçu du site](C:\Users\DELL\Desktop\Projets\Site_Vitrine_Boulangerie\images)
+![Aperçu du site](images/capture_full_site.png)
