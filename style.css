@@ -1,0 +1,314 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff9f5;
+  color: #333;
+}
+
+                   /***  NAVIGATION ***/
+nav.navbar {
+  background-color: #c78b55 !important; /* Remplace le bg-warning Bootstrap */
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* légère ombre */
+  height: 70px;
+  overflow: visible;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Logo */
+.navbar-brand {
+  white-space: nowrap; /* Empêche le retour à la ligne */
+  font-size: 1.25rem;
+  
+}
+
+/* Lien de navigation */
+.navbar-nav .nav-link {
+  color: white !important;
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffefc3 !important; /* Couleur de survol douce */
+}
+.menu-icon, .close-icon {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.d-none {
+  display: none !important;
+}
+
+/*.navbar-toggler:focus { /* Pour supprimer le rectanle qui entour les menu au click*/
+  /*outline: none;
+  box-shadow: none;
+}*/
+
+/* Style du menu mobile */
+.mobile-nav {
+  background-color: #4d2e1f; /* fond distinct */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 40%;
+  z-index: 999;
+}
+
+           /*** BANNIERE   ***/
+.hero-banner {
+  position: relative;
+}
+.carousel-indicators{
+  z-index: 10;
+}
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+ background-color: #c78b55;
+}
+
+.carousel-inner img {
+  height: 400px;
+  object-fit: cover;
+  object-position: center; /* centrer l'image */
+}
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 10;
+  cursor: pointer;
+}
+/* les flèches étaient probablement cachées derrière un autre élément (comme .carousel-caption) à cause de l’ordre de superposition (z-index).
+    z-index: 10; sur .carousel-control-prev et .carousel-control-next permet de les placer au-dessus des autres éléments du carrousel. */
+
+/* Texte centré sur l'image */
+.carousel-caption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4); /* optionnel : fond sombre transparent */
+  color: white;
+  padding: 2rem;
+  z-index: 2;
+}
+
+
+/* Ajustement du bouton */
+.carousel-caption .btn-warning {
+  background-color: #a35e2d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+}
+
+.carousel-caption .btn-warning:hover {
+  background-color: #8a4e24;
+}
+
+/* Section générique */
+.section {
+  padding: 3rem 2rem;
+}
+/* Titre des sections */
+h2 {
+  color: #c78b55; /* Une teinte marron clair, si tu veux rappeler ta navbar */
+  font-weight: bold;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  /*text-transform: uppercase;*/
+  }
+     /* A PROPOS  */ 
+
+/* petite ligne sous le titre */ 
+/*h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #c78b55;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}*/
+
+#apropos p {
+  font-size: 1.1rem;
+  color: #333; /* ou #555 pour plus de douceur */
+  line-height: 1.6;
+}
+
+#apropos img {
+  border: 6px solid white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  width: 400px; /* ou 300px selon ton design */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#apropos img:hover {
+  transform: rotate(0deg) scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+      /*   PRODUITS    */
+/* Effet de survol sur les cartes */
+#produits .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none; /* Supprime la bordure grise par défaut */
+  border-radius: 10px;
+}
+
+/*#produits .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}*/
+
+/* Titre de produit */
+#produits .card-title {
+  font-weight: 600;
+  color: #5c3a1d;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Texte de description */
+#produits .card-text {
+  font-size: 1rem;
+  color: #555;
+}
+#produits .card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+                /*    CONTACT    */
+
+.contact-info {
+  font-size: 1.1rem;
+  background-color: #fdf7f3;
+  border-left: 5px solid #864a23;
+  line-height: 1.6;
+  color: #333;
+  
+}
+
+.contact-info i {
+  font-size: 1.2rem;
+  color: #864a23;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+input.form-control,
+textarea.form-control {
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button.btn-warning {
+  background-color: #a35e2d;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-warning:hover {
+  background-color: #864a23;
+}        
+
+       /*    FOOTER   */
+.footer-custom {
+  background-color: #a35e2d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+.footer-custom .container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.footer-custom .logo {
+  margin: 0 10px;
+}
+
+/*.footer-custom a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-custom a:hover {
+  text-decoration: underline;
+}*/
+
+/* Icônes sociales centrées et espacées */
+.footer-custom .social-icons {
+  margin-top: 0.5rem;
+}
+
+.footer-custom .social-icon {
+  margin: 0 8px;
+  font-size: 1.4rem;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.footer-custom .social-icon:hover {
+  color: #ffefc3;
+  transform: scale(1.3);
+}
+
+
+
+
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1rem; /* Réduit la taille du texte sur petit écran */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
