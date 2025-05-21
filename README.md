@@ -21,4 +21,4 @@ Il a été conçu pour servir de modèle réutilisable et personnalisable pour n
 
 ## 📷 Aperçu
 
-*(Ajoute ici une capture d'écran du site ou une démo GIF si tu veux)*
+![Aperçu du site](_C___Users_DELL_Desktop_Projets_Site_Vitrine_Boulangerie_index.html_.png)
