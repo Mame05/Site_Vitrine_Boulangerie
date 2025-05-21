@@ -21,4 +21,4 @@ Il a été conçu pour servir de modèle réutilisable et personnalisable pour n
 
 ## 📷 Aperçu
 
-*(Ajoute ici une capture d'écran du site ou une démo GIF si tu veux)*
+![Aperçu du site](images/capture_full_site.png)
