@@ -255,12 +255,43 @@ button.btn-warning:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
 }
-
-
-.footer-custom a {
-  color: white;
-  text-decoration: underline;
+.footer-custom .container {
+  max-width: 1140px;
+  margin: auto;
 }
+
+.footer-custom .logo {
+  margin: 0 10px;
+}
+
+/*.footer-custom a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-custom a:hover {
+  text-decoration: underline;
+}*/
+
+/* Icônes sociales centrées et espacées */
+.footer-custom .social-icons {
+  margin-top: 0.5rem;
+}
+
+.footer-custom .social-icon {
+  margin: 0 8px;
+  font-size: 1.4rem;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.footer-custom .social-icon:hover {
+  color: #ffefc3;
+  transform: scale(1.3);
+}
+
+
 
 
 
