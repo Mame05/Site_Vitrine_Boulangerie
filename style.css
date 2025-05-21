@@ -244,7 +244,24 @@ button.btn-warning {
 
 button.btn-warning:hover {
   background-color: #864a23;
+}        
+
+       /*    FOOTER   */
+.footer-custom {
+  background-color: #a35e2d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
 }
+
+
+.footer-custom a {
+  color: white;
+  text-decoration: underline;
+}
+
 
 
 @media (max-width: 576px) {
